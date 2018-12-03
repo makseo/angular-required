@@ -1,11 +1,11 @@
 {
   "name": "angular-required",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Angular 2+ decorator to make @Input required",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "./dist/index.d.ts",
   "scripts": {
-    "build": "rimraf ./dist && tsc -p tsconfig.json",
-    "publish": "npm run publish ./dist"
+    "build": "rimraf ./dist && tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
   "devDependencies": {
     "rimraf": "2.6.2",
     "typescript": "3.2.1"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
